@@ -1,0 +1,9 @@
+  version: '3'
+
+  services:
+    db:
+      image: postgres
+      environment:
+        - POSTGRES_DB=dartalla
+        - POSTGRES_USER=dartalla
+        - POSTGRES_PASSWORD=dartalla
