@@ -3,7 +3,10 @@
   services:
     db:
       image: postgres
+      container_name: dartalla_db
       environment:
         - POSTGRES_DB=dartalla
         - POSTGRES_USER=dartalla
         - POSTGRES_PASSWORD=dartalla
+      ports:
+      - 5432
