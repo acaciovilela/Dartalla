@@ -1,5 +1,6 @@
-from django.shortcuts import render
 from django.views.generic import ListView
+
+from person.models import Person
 
 
 class ListPersonView(ListView):
