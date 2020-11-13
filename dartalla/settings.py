@@ -27,6 +27,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'user.apps.UserConfig',
     'dashboard.apps.DashboardConfig',
+    'cpf.apps.CpfConfig',
+    'person.apps.PersonConfig',
 ]
 
 MIDDLEWARE = [
@@ -118,3 +120,5 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
 # Authentication
 LOGIN_REDIRECT_URL = '/'
 LOGOUT_REDIRECT_URL = '/accounts/login'
+
+CPF_API_TOKEN_URL = "https://apigateway.conectagov.estaleiro.serpro.gov.br/oauth2/jwt-token"
